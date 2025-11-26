@@ -47,7 +47,7 @@ fitcrm/
 ## Deployment used
 This project is deployed using **GitHub Pages**.  
 
-- **Live App:** [FitCRM](https://joliekhaled.github.io/FitCRM/)  
+- **Live App:** [FitCRM](https://joliekhaled.github.io/Assignment-2---FitCRM/)  
 - **GitHub Repository:** [FitCRM Repo](https://github.com/Joliekhaled/Assignment-2---FitCRM.git)  
 
 ## Notes for graders
