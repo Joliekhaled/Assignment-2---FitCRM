@@ -25,9 +25,9 @@ The app allows adding new clients, viewing a client list, and switching between 
 ---
 
 ## 🛠️ Tech Stack
-HTML, CSS, JavaScript (Vanilla)
-Local Storage for data persistence
-REST API integration for suggested exercises (Wger)
+- HTML, CSS, JavaScript (Vanilla)
+- Local Storage for data persistence
+- REST API integration for suggested exercises (Wger)
 
 
 ---
