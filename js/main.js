@@ -1,5 +1,3 @@
-// js/main.js
-
 /* ========== Constants & Selectors ========== */
 const STORAGE_KEY = 'fitcrm_clients';
 
@@ -513,4 +511,3 @@ backToListBtn.addEventListener('click', () => {
     renderClientList();
     showSection('form');
 })();
-

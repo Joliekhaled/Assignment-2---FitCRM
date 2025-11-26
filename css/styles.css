@@ -1,87 +1,69 @@
-<<<<<<< HEAD
-/* ===== General Page Styles ===== */
+ /* ===== General Page Styles ===== */
 body {
-    font-family: Arial, sans-serif; /* Set default font */
-    margin: 0; /* Remove default margin */
-    background: #f7f8fa; /* Light gray background */
-    color: #2b4162; /* Default text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f7f8fa;
+    color: #2b4162;
 }
 
 header {
-    background: #1d8ccd; /* Header background color */
-    color: #f4f4f4; /* Header text color */
-    padding: 16px 0 8px; /* Top and bottom padding */
-    text-align: center; /* Center header text */
+    background: #1d8ccd;
+    color: #f4f4f4;
+    padding: 16px 0 8px;
+    text-align: center;
     
-    display: flex; /* Flex layout for header */
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center;  /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    width: 100%; /* Full width */
-    box-sizing: border-box; /* Include padding in width */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* center everything inside */
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box; 
+}
+.header-content {
+    text-align: center;   /* always center inside header */
+    max-width: 1000px;    /* keep width consistent */
+    width: 100%;
 }
 
-.header-content {
-    text-align: center;   /* Center content inside header */
-    max-width: 1000px;    /* Limit max width */
-    width: 100%; /* Full width */
-}
+
 
 .header-main h1 {
-    margin: 0; /* Remove default margin */
-    font-size: 2.2rem; /* Large heading size */
-    font-weight: bold; /* Bold heading */
-    letter-spacing: 1px; /* Space between letters */
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .header-content .subheading {
-    margin: 3px 0 0 0; /* Small margin above */
-    font-size: 1rem; /* Normal font size */
-    font-weight: 400; /* Regular weight */
-    color: #e0f2ff;  /* Light blue subheading */
+    margin: 3px 0 0 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #e0f2ff;  /* softer light blue for subheading */
 }
 
-=======
-/* General page styles */
-body {
-  font-family: Arial, sans-serif;   /* Default font */
-  margin: 0;                        /* Remove default spacing */
-  background: #f7f8fa;              /* Light gray background */
-}
-
-/* Header styles */
-header {
-  background: #1d8ccd;              /* Blue background */
-  color: #f4f4f4;                   /* Light text color */
-  padding: 16px 0 8px;              /* Top, right/left, bottom padding */
-  text-align: center;               /* Centered text */
-}
-
-/* Navigation bar */
->>>>>>> 8b6c166dcc0968e0152f8d76685d7b30eae98ed4
 nav {
-    margin-top: 12px; /* Space above nav */
+    margin-top: 12px;
 }
 
-<<<<<<< HEAD
 nav button {
-    background: #fff; /* White button background */
-    color: #2b4162; /* Button text color */
-    border: none; /* Remove border */
-    padding: 8px 18px; /* Button padding */
-    font-size: 1rem; /* Button font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    margin: 0 5px; /* Horizontal spacing */
-    border-radius: 3px 3px 0 0; /* Rounded top corners */
-    border-bottom: 2px solid transparent; /* Bottom border for hover effect */
+    background: #fff;
+    color: #2b4162;
+    border: none;
+    padding: 8px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 3px 3px 0 0;
+    border-bottom: 2px solid transparent;
 }
 
 nav button.active, nav button:hover {
-    border-bottom: 2px solid #1d8ccd; /* Bottom border on active/hover */
-    color: #1d8ccd; /* Change text color on hover/active */
+    border-bottom: 2px solid #1d8ccd;
+    color: #1d8ccd;
 }
 
-/* Adjust nav spacing and transitions */
+
 nav {
     margin-top: 8px;
 }
@@ -93,10 +75,10 @@ nav button {
     padding: 8px 18px;
     font-size: 1rem;
     cursor: pointer;
-    margin: 25px 5px 0 5px; /* Add top margin for spacing */
+    margin: 25px 5px 0 5px;
     border-radius: 3px 3px 0 0;
     border-bottom: 2px solid transparent;
-    transition: 0.2s; /* Smooth hover transition */
+    transition: 0.2s;
 }
 
 nav button.active, nav button:hover {
@@ -106,386 +88,209 @@ nav button.active, nav button:hover {
 
 /* ===== Section Container ===== */
 section {
-    max-width: 1130px; /* Limit section width */
-    width: 95%; /* Use 95% of parent width */
-    margin: 32px auto; /* Center section with vertical spacing */
-    padding: 20px; /* Internal padding */
-    background: #fff; /* White background */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 3px 10px rgba(0,0,0,0.05); /* Subtle shadow */
-=======
-/* Navigation buttons */
-nav button {
-  background: #fff;                 /* White background */
-  color: #2b4162;                   /* Dark text */
-  border: none;                     /* No border */
-  padding: 8px 18px;                /* Button padding */
-  font-size: 1rem;                  /* Normal font size */
-  cursor: pointer;                  /* Pointer on hover */
-  margin: 0 5px;                    /* Horizontal spacing */
-  border-radius: 3px 3px 0 0;       /* Rounded top corners */
-  border-bottom: 2px solid transparent; /* Invisible bottom border */
-}
-
-/* Active tab + Hover effect */
-nav button.active, nav button:hover {
-  border-bottom: 2px solid #1d8ccd; /* Blue underline */
-  color: #1d8ccd;                   /* Blue text */
-}
-
-/* Section container (form or list) */
-section {
-  max-width: 1050px;                /* Limit width */
-  margin: 32px auto;                /* Center with spacing */
-  padding: 18px;
-  background: #fff;                 /* White background */
-  border-radius: 6px;               /* Rounded corners */
-  box-shadow: 0 2px 8px rgba(180,180,180,0.1); /* Subtle shadow */
->>>>>>> 8b6c166dcc0968e0152f8d76685d7b30eae98ed4
+    max-width: 1130px;
+     width: 95%; 
+    margin: 32px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
 }
 
 /* Hide elements */
 .hidden {
-    display: none; /* Hide element completely */
+    display: none;
 }
 
-<<<<<<< HEAD
 /* ===== Client Form ===== */
 .client-form {
-    display: flex; /* Flex layout for form */
-    flex-direction: column; /* Stack fields vertically */
-    gap: 16px; /* Space between fields */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .client-form label {
-    display: flex; /* Flex layout for label */
-    flex-direction: column; /* Stack label and input vertically */
-    font-size: 1rem; /* Label font size */
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
 }
 
 .client-form input,
 .client-form select {
-    padding: 6px 10px; /* Input padding */
-    margin-top: 3px; /* Space above input */
-    border: 1px solid #d5d7d9; /* Light gray border */
-    border-radius: 4px; /* Rounded corners */
-    font-size: 1rem; /* Input font size */
+    padding: 6px 10px;
+    margin-top: 3px;
+    border: 1px solid #d5d7d9;
+    border-radius: 4px;
+    font-size: 1rem;
 }
 
 /* ===== Buttons ===== */
 .primary-btn {
-    background: #1d8ccd; /* Primary button color */
-    color: #fff; /* White text */
-    border: none; /* Remove border */
-    padding: 10px 20px; /* Button padding */
-    font-weight: bold; /* Bold text */
-    font-size: 1.05rem; /* Slightly larger font */
-    border-radius: 6px; /* Rounded corners */
-    cursor: pointer; /* Pointer on hover */
-    margin-top: 8px; /* Top margin */
-    transition: 0.2s; /* Smooth hover */
+    background: #1d8ccd;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1.05rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: 0.2s;
 }
 
 .primary-btn:hover {
-    opacity: 0.9; /* Slight fade on hover */
+    opacity: 0.9;
 }
 
 /* ===== Search Bar ===== */
 .search-bar {
-    margin-bottom: 16px; /* Space below search bar */
-    text-align: right; /* Align search bar to right */
-=======
-/* Client form layout */
-.client-form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
-  flex-direction: column;           /* Stack labels vertically */
+    margin-bottom: 16px;
+    text-align: right;
 }
 
-/* Each label (field title + input) */
-.client-form label {
-  display: flex;
-  flex-direction: column;           /* Label text above input */
-  font-size: 1rem;
-  color: #2b4162;                   /* Dark blue text */
-}
-
-/* Form inputs and dropdowns */
-.client-form input, .client-form select {
-  padding: 6px 8px;
-  margin-top: 3px;
-  border: 1px solid #d5d7d9;        /* Light border */
-  border-radius: 3px;
-  font-size: 1rem;
-}
-
-/* Primary button styling */
-.primary-btn {
-  background: #1d8ccd;              /* Blue background */
-  color: #fff;                      /* White text */
-  border: none;
-  padding: 10px 20px;
-  font-weight: bold;
-  font-size: 1.1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 8px;
-}
-
-/* Search bar above client list */
-.search-bar {
-  margin-bottom: 14px;
-  text-align: right;                /* Align right on desktop */
->>>>>>> 8b6c166dcc0968e0152f8d76685d7b30eae98ed4
-}
-
-/* Search input field */
 .search-bar input {
-<<<<<<< HEAD
-    padding: 6px 12px; /* Input padding */
-    width: 100%; /* Full width */
-    max-width: 300px; /* Limit max width */
-    border: 1px solid #bdbdbd; /* Gray border */
-    border-radius: 4px; /* Rounded corners */
-    font-size: 1rem; /* Input font size */
-    box-sizing: border-box; /* Include padding in width */
+    padding: 6px 12px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
 }
 
 @media (max-width: 600px) {
-    .search-bar { text-align: center; } /* Center on small screens */
-    .search-bar input { width: 90%; max-width: none; } /* Make input responsive */
+    .search-bar { text-align: center; }
+    .search-bar input { width: 90%; max-width: none; }
 }
 
 /* ===== Table Styles ===== */
 table {
-    width: 100%; /* Full width table */
-    border-collapse: collapse; /* Remove spacing between cells */
+    width: 100%;
+    border-collapse: collapse;
 }
 
 th, td {
-    padding: 12px 8px; /* Cell padding */
-    border-bottom: 1px solid #ededed; /* Bottom border */
-    text-align: left; /* Left-align text */
+    padding: 12px 8px;
+    border-bottom: 1px solid #ededed;
+    text-align: left;
 }
 
 th {
-    color: #2b4162; /* Table header text color */
-    font-weight: bold; /* Bold headers */
-    background: #f6f9fb; /* Header background */
+    color: #2b4162;
+    font-weight: bold;
+    background: #f6f9fb;
 }
 
 /* Column width adjustments */
-table th:nth-child(1), table td:nth-child(1) { min-width: 140px; } /* Name column */
-table th:nth-child(3), table td:nth-child(3) { min-width: 140px; } /* Phone column */
-table th:nth-child(4), table td:nth-child(4) { min-width: 140px; } /* Goal column */
-table th:nth-child(5), table td:nth-child(5) { min-width: 180px; } /* Start Date column */
+table th:nth-child(1), table td:nth-child(1) { min-width: 140px; } /* Name */
+table th:nth-child(3), table td:nth-child(3) { min-width: 140px; } /* Phone */
+table th:nth-child(4), table td:nth-child(4) { min-width: 140px; } /* Goal */
+table th:nth-child(5), table td:nth-child(5) { min-width: 180px; } /* Start Date */
 
 /* ===== Action Buttons ===== */
 .action-btn {
-    padding: 6px 10px; /* Button padding */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 0.95rem; /* Slightly smaller font */
-    cursor: pointer; /* Pointer on hover */
-    margin-right: 8px; /* Space between buttons */
-    min-width: 78px; /* Minimum width */
-    display: inline-flex; /* Flex for icons/text */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    white-space: nowrap; /* Prevent text wrapping */
-    transition: 0.2s; /* Smooth hover */
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    margin-right: 8px;
+    min-width: 78px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    transition: 0.2s;
 }
 
-.view-btn.action-btn { background: #cb82d0; color: #fff; } /* View button color */
-.edit-btn.action-btn { background: #cbcb45; color: #fff; } /* Edit button color */
-.delete-btn.action-btn { background: #f83f3f; color: #fff; } /* Delete button color */
+.view-btn.action-btn { background: #cb82d0; color: #fff; }
+.edit-btn.action-btn { background: #cbcb45; color: #fff; }
+.delete-btn.action-btn { background: #f83f3f; color: #fff; }
+
 
 /* ================= Center "Actions" header above buttons ================= */
+
+/* Make the Actions th use flex to center content */
 th[data-label="Actions"] {
-    display: flex; /* Flex for centering */
-    flex-direction: column; /* Stack vertically */
-    justify-content: center;  /* Vertical centering */
-    align-items: center;      /* Horizontal centering */
-    text-align: center; 
-    padding: 12px 8px; /* Match other headers */
+    display: flex;
+    flex-direction: column;   /* stack content vertically if needed */
+    justify-content: center;  /* vertical centering */
+    align-items: center;      /* horizontal centering */
+    text-align: center;
+    padding: 12px 8px;        /* match other th padding */
 }
 
+/* td containing buttons stays inline flex */
 td[data-label="Actions"] {
-    display: flex; /* Flex layout for buttons */
-    gap: 6px; /* Space between buttons */
-    align-items: center; /* Vertically center */
-    justify-content: center; /* Horizontally center */
-    flex-wrap: wrap; /* Wrap on small screens */
+    display: flex;
+    gap: 6px;
+    align-items: center;      /* vertically center buttons within td */
+    justify-content: center;  /* center buttons horizontally */
+    flex-wrap: wrap;          /* allow wrapping on small screens */
 }
 
-/* Ensure action buttons don't stretch too much */
+/* Ensure action buttons don't stretch too much on small screens */
 td[data-label="Actions"] .action-btn {
     min-width: 60px;
     padding: 6px 10px;
     font-size: 0.95rem;
 }
 
+/* Optional: for very narrow screens, keep buttons stacked nicely */
 @media (max-width: 420px) {
     td[data-label="Actions"] {
-        justify-content: flex-start; /* Align buttons left on narrow screens */
+        justify-content: flex-start; /* left-align buttons on narrow screens */
     }
 }
 
+
 /* ===== Training History & Exercises ===== */
 #training-history li {
-    margin-bottom: 6px; /* Space between items */
-    padding: 6px 12px; /* Item padding */
-    background: #f5f5f5; /* Light gray background */
-    border-left: 3px solid #2b4162; /* Left colored border */
-    border-radius: 4px; /* Rounded corners */
-    font-size: 0.95rem; /* Slightly smaller font */
+    margin-bottom: 6px;
+    padding: 6px 12px;
+    background: #f5f5f5;
+    border-left: 3px solid #2b4162;
+    border-radius: 4px;
+    font-size: 0.95rem;
 }
 
 #exercises-next > div > button {
-    display: block; /* Full width button */
+    display: block;
     width: 100%;
-    background: #f8f9fa; /* Light gray background */
-    border: 1px solid #bdbdbd; /* Gray border */
-    border-radius: 8px; /* Rounded corners */
-    padding: 10px 15px; /* Button padding */
-    text-align: left; /* Align text left */
-    cursor: pointer; /* Pointer cursor */
-    transition: all 0.2s; /* Smooth hover */
-    margin-bottom: 6px; /* Space below button */
+    background: #f8f9fa;
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 6px;
 }
 
 #exercises-next > div > button:hover {
-    background: #e1e7f0; /* Slight hover background */
-    transform: scale(1.02); /* Slight scale effect */
+    background: #e1e7f0;
+    transform: scale(1.02);
 }
 
 /* ===== Responsive Table for Mobile ===== */
 @media (max-width: 650px) {
-    section { padding: 10px; } /* Reduce section padding */
-    table, thead, tbody, th, td, tr { display: block; } /* Stack table */
+    section { padding: 10px; }
+    table, thead, tbody, th, td, tr { display: block; }
     tr {
-        margin-bottom: 14px; /* Space between rows */
-        background: #fafbfc; /* Row background */
-        border-radius: 5px; /* Rounded rows */
-        box-shadow: 0 1px 3px #ddd; /* Subtle shadow */
-        padding: 8px 0; /* Row padding */
+        margin-bottom: 14px;
+        background: #fafbfc;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px #ddd;
+        padding: 8px 0;
     }
-    th { display: none; } /* Hide headers */
-    td { position: relative; padding-left: 40%; } /* Space for pseudo label */
+    th { display: none; }
+    td { position: relative; padding-left: 40%; }
     td::before {
-        content: attr(data-label); /* Show column name */
+        content: attr(data-label);
         position: absolute;
-        left: 10px; /* Left padding */
-        font-weight: bold; /* Bold text */
-        color: #888; /* Gray color */
-        min-width: 120px; /* Minimum label width */
+        left: 10px;
+        font-weight: bold;
+        color: #888;
+        min-width: 120px;
     }
-=======
-  padding: 6px 12px;
-  width: 100%;              /* Take full width by default */
-  max-width: 300px;         /* Limit width on desktop */
-  border: 1px solid #bdbdbd;
-  border-radius: 3px;
-  font-size: 1rem;
-  box-sizing: border-box;   /* Include padding in width */
-}
-
-/* Responsive search bar (mobile view) */
-@media (max-width: 600px) {
-  .search-bar {
-    text-align: center;     /* Center align on mobile */
-  }
-
-  .search-bar input {
-    width: 90%;             /* Almost full screen */
-    max-width: none;        /* Remove limit */
-  }
-}
-
-/* Table styles */
-table {
-  width: 100%;
-  border-collapse: collapse; /* Merge borders */
-  /* other styles */
-}
-
-/* Column width adjustments */
-table th:nth-child(3),
-table td:nth-child(3) {
-  min-width: 140px; /* Phone column */
-}
-table th:nth-child(4),
-table td:nth-child(4) {
-  min-width: 140px; /* Fitness goal column */
-}
-table th:nth-child(1),
-table td:nth-child(1) {
-  min-width: 140px; /* Name column */
-}
-table th:nth-child(5),
-table td:nth-child(5) {
-  min-width: 160px; /* Start date column */
-}
-
-/* Table cell styles */
-th, td {
-  padding: 12px 8px;
-  border-bottom: 1px solid #ededed; /* Light line between rows */
-  text-align: left;
-}
-th {
-  color: #2b4162;                   /* Dark header text */
-  font-weight: bold;
-  background: #f6f9fb;              /* Light gray header background */
-}
-
-/* Edit/Delete button styles */
-.edit-btn, .delete-btn {
-  padding: 5px 12px;
-  margin-right: 4px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-.edit-btn {
-  background: #6a8caf;              /* Grayish blue */
-  color: #fff;
-}
-.delete-btn {
-  background: #ff6b6b;              /* Red */
-  color: #fff;
-}
-
-/* Responsive table for mobile */
-@media (max-width: 650px) {
-  section {
-      padding: 10px;                /* Smaller padding */
-  }
-  table, thead, tbody, th, td, tr {
-      display: block;               /* Convert table to blocks */
-  }
-  tr {
-      margin-bottom: 14px;
-      background: #fafbfc;
-      border-radius: 5px;
-      box-shadow: 0 1px 3px #ddd;
-      padding: 8px 0;
-  }
-  th {
-      display: none;                /* Hide table headers */
-  }
-  td {
-      position: relative;
-      padding-left: 40%;            /* Leave space for label */
-  }
-  td::before {
-      content: attr(data-label);    /* Show column label before value */
-      position: absolute;
-      left: 10px;
-      font-weight: bold;
-      color: #888;
-      min-width: 120px;
-  }
->>>>>>> 8b6c166dcc0968e0152f8d76685d7b30eae98ed4
 }
