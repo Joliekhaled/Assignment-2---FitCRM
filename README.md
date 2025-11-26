@@ -11,7 +11,7 @@ The app allows adding new clients, viewing a client list, and switching between 
   Collects client details: name, age, gender, email, phone, fitness goal, and membership start date.  
 
 - **Client List View**  
-  Displays existing clients in a table with actions (`Edit`, `Delete`).  
+  Displays existing clients in a table with actions (`Edit`, `Delete`, 'View').  
 
 - **Search**  
   Search bar to filter clients by name.  
@@ -25,9 +25,10 @@ The app allows adding new clients, viewing a client list, and switching between 
 ---
 
 ## 🛠️ Tech Stack
-- **HTML5**
-- **CSS3** (Responsive design with media queries)
-- **Vanilla JavaScript** (Minimal for just Tab switching logic)
+HTML, CSS, JavaScript (Vanilla)
+Local Storage for data persistence
+REST API integration for suggested exercises (Wger)
+
 
 ---
 
@@ -37,17 +38,18 @@ The app allows adding new clients, viewing a client list, and switching between 
 fitcrm/
 ├── index.html
 ├── css/
-│   └── styles.css
-└── README.md
+│ └── styles.css
+├── js/
+│ └── main.js
+├── assets/
+│ ├── README.md
 
 ## Deployment used
 This project is deployed using **GitHub Pages**.  
 
 - **Live App:** [FitCRM](https://joliekhaled.github.io/FitCRM/)  
-- **GitHub Repository:** [FitCRM Repo](https://github.com/joliekhaled/FitCRM)  
+- **GitHub Repository:** [FitCRM Repo](https://github.com/Joliekhaled/Assignment-2---FitCRM.git)  
 
 ## Notes for graders
-- Add Client, Edit, and Delete are placeholders per assignment (no server/persistence required).
-- The search box filters the table client-side.
 - Code is commented and organized.
 
